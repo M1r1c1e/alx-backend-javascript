@@ -1,5 +1,9 @@
-import ClassRoom from './0-classroom.js';
+import ClassRoom from './0-classroom';
 
+/**
+ * Implement a function named initializeRooms
+ * @returns An array of 3 classroom
+ */
 export default function initializeRooms() {
-  return [new ClassRoom(19), new ClassRoom(20), new ClassRoom(34)];
+  return [19, 20, 34].map((size) => new ClassRoom(size));
 }
